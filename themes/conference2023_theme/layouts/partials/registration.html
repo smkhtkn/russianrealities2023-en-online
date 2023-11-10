@@ -1,0 +1,99 @@
+<div class="py-5 p-lg-5 bg-white rounded-0 border border-3 border-danger shadow-at">
+    <h2 id="Registration" class="display-4 display-5 fw-bold text-center mb-5 ptserif">Registration</h2>
+    
+    <form method="POST" action="https://script.google.com/macros/s/{{with .google}}{{.}}{{end}}/exec" class="mx-5" id="regform">
+        <div class="d-lg-flex mb-3">
+        <div class="col-12 col-lg-6 pe-lg-3">
+            <label for="name" class="form-label display-9">How to address you?</label>
+            <input name="Name" type="text" class="form-control-lg w-100 rounded-0 atypique" id="name" aria-describedby="nameHelp" placeholder="John Law" required>
+            <div id="nameHelp" class="form-text">If desired, you can only specify your name</div>
+        </div>
+        <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+            <label for="mail" class="form-label display-9">Your email</label>
+            <input name="Email" type="email" class="form-control-lg w-100 rounded-0 atypique" id="mail" aria-describedby="mailHelp" placeholder="name@example.com" required>
+            <div id="mailHelp1" class="form-text {{with .online}}{{.}}{{end}}">We will send you links</div>
+            <div id="mailHelp2" class="form-text {{with .inplace}}{{.}}{{end}}">We will alert you to the opening of the conference</div>
+        </div>
+    </div>
+        <div class="mb-3 form-check d-none">
+            <input name="Subscription" type="checkbox" class="form-check-input" id="subscription" checked>
+            <label class="form-check-label" for="subscription">Хочу получать рассылку медиа-проекта «О стране и мире» с анонсами новых мероприятий</label>
+        </div>
+
+        <div class="mb-3 py-4 {{with .inplace}}{{.}}{{end}}">
+
+            <label for="checkSession1" class="form-label display-9">Please select sessions</label>
+
+            <div class="d-lg-flex">
+            <div class="col-12 col-lg-6 pe-lg-3">
+            <div class="form-check form-switch mb-2">
+                <input name="Session1" class="form-check-input" type="checkbox" role="switch" id="checkSession1">
+                <label class="form-check-label" for="checkSession1">Session 1: Evolution of the political regime during the war</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session2" class="form-check-input" type="checkbox" role="switch" id="checkSession2">
+                <label class="form-check-label" for="checkSession2">Session 2: Repression and human rights</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session3" class="form-check-input" type="checkbox" role="switch" id="checkSession3">
+                <label class="form-check-label" for="checkSession3">Session 3: Anti-War Russia in Emigration</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session4" class="form-check-input" type="checkbox" role="switch" id="checkSession4">
+                <label class="form-check-label" for="checkSession4">Session 4: The Ideology of Putin's Regime after the Start of the Invasion of Ukraine</label>
+            </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+            <div class="form-check form-switch mb-2">
+                <input name="Session5" class="form-check-input" type="checkbox" role="switch" id="checkSession5">
+                <label class="form-check-label" for="checkSession5">Session 5: World politics</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session6" class="form-check-input" type="checkbox" role="switch" id="checkSession6">
+                <label class="form-check-label" for="checkSession6">Session 6: World politics (continuation)</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session7" class="form-check-input" type="checkbox" role="switch" id="checkSession7">
+                <label class="form-check-label" for="checkSession7">Session 7: What do we know about the mood of the Russians?</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="Session8" class="form-check-input" type="checkbox" role="switch" id="checkSession8">
+                <label class="form-check-label" for="checkSession8">Session 8: War economy</label>
+            </div>
+            <div class="form-check form-switch mb-2">
+                <input name="AllSessions" class="form-check-input" type="checkbox" role="switch" id="checkAllSessions" checked>
+                <label class="form-check-label" for="checkAllSessions"><span class="fw-bold">All sessions</span></label>
+            </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="mb-3 py-3 {{with .online}}{{.}}{{end}}">
+
+            <label for="checkDay1" class="form-label display-9">Please select days</label>
+
+            <div class="d-lg-flex">
+            <div class="col-12 col-lg-6 pe-lg-3">
+            <div class="form-check form-switch mb-2">
+                <input name="Day1" class="form-check-input" type="checkbox" role="switch" id="checkDay1" checked>
+                <label class="form-check-label" for="checkDay1">Day 1: 23 November</label>
+            </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+            <div class="form-check form-switch mb-2">
+                <input name="Day2" class="form-check-input" type="checkbox" role="switch" id="checkDay2" checked>
+                <label class="form-check-label" for="checkDay2">Day 2: 24 November</label>
+            </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="text-center"><button type="submit" class="btn btn-danger btn-lg rounded-0">Send</button></div>
+        
+    </form>
+    <div id="success-message" class="d-none mx-5 display-8 text-center">{{with .success}}{{.}}{{end}} <a href="mailto:info@sakharov.world">info@sakharov.world</a></div>
+</div>

@@ -1,0 +1,14 @@
+<title>The country and the world: Russian Realities-2023</title>
+<meta charset="utf-8">
+<meta name="description"
+    content="The international conference The Country and The World is dedicated to the Russian aggression against Ukraine and how this war is changing Russia. We will talk about the transformation of the political regime and its ideology, the state of Russian society, repression and war crimes, the new wave of emigration, international politics and economics. Speakers include Ekaterina Shulman, Kirill Rogov, Sergei Guriev, Nikolai Petrov, Alexander Morozov and Andrei Kolesnikov." />
+<meta name="dc.relation" content="{{ .Site.BaseURL }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#1A94D2" />
+
+{{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
+
+{{ $style := resources.Get "sass/main.scss" | toCSS  $options | minify }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+
+<link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />

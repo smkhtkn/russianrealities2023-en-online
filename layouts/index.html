@@ -1,0 +1,146 @@
+{{ define "main" }}
+
+<div class="container">
+
+    <div class="row mx-auto">
+
+        <div class="col-xl-3">
+            {{ partial "menu.html" . }}
+        </div>
+
+        <div class="col-xl-9 ps-xl-5">
+            <div class="conference-image">
+                <div class="my-xl-5 py-xl-5 pt-5">
+                    <div class="my-xl-5 mt-5 py-5">
+                        <div class="fs-3 d-inline">Organized by Media Project <a class="ms-lg-2" href="https://t.me/stranaimir" target="_blank"><img class="stmologo" src="stmlogoen.svg" alt="The Country and the World"/></a></div>
+                        <h1 class="display-2 fw-bold text-uppercase my-5 ptserif">The country and the world: Russian Realities-2023</h1>
+                        <h2 class="display-6 my-5"><mark class="text-white bg-danger">Berlin, 23-24 November</mark></h2> 
+                    </div>
+                </div>
+            </div>
+
+        <div class="lead my-5">
+            <p>On 23-24 November the international conference "The Country and the World: Russian Realities-2023" will take place in Berlin, following on from the "Russian Realities" conferences held by the Sakharov Centre in Moscow from 2018-2022. Since 2023, the conference has become an international one, with researchers and human rights activists from different countries taking part.</p>
+            <p>The conference will be broadcast on YouTube. The working languages will be Russian and English with simultaneous translation.</p>
+            <p>The Russian Realities Forum is dedicated to the Russian aggression against Ukraine and how this war is changing Russia. We will talk about the transformation of the political regime and its ideology, the state of Russian society, repression and war crimes, the new wave of emigration, international politics and economics.</p>
+        </div>
+
+    <div id="DayOne" class="mt-5 mb-3 pt-5">
+        <h2 class="display-3 ptserif fw-bold">Day 1</h2>
+    </div>
+    
+    <div id="Session1" class="py-lg-5 py-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 1 "ssname" "Evolution of the political regime during the war" "sstime" "10.00-12.00" "ssdesc" "Political outcomes of 2023. Putin is preparing for a long war - will the Russian political system be able to withstand it? Has Putin become a lame duck? Are influential siloviki beginning to prepare for different scenarios of ‟post-Putin” politics? The Prigozhin rebellion, regional power companies - are we entering a period of a new ‟redistribution of the cake”?" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Kirill Rogov" "image" "rogov" "affiliation" "Political scientist, director of the Re:Russia project" "theme" "To be announced" "badgeparamsp" "d-block") }}
+        
+        {{partial "lists/speaker.html" (dict "name" "Ivan Krastev" "image" "krastev" "affiliation" "Chairman of the Centre for Liberal Strategies (Sofia), senior researcher at the Vienna Institute for the Humanities (Vienna), member of the European Council on Foreign Relations" "theme" "The Russian regime seen from outside" "badgeparamsp" "d-block") }}
+        
+        {{partial "lists/speaker.html" (dict "name" "Ekaterina Shulman" "image" "schulmann" "affiliation" "Visiting Fellow at the Carnegie Berlin Centre for Russian and Eurasian Studies" "theme" "To be announced") }}
+        
+        {{partial "lists/speaker.html" (dict "name" "Nikolai Petrov" "image" "petrov" "affiliation" "Head of the Centre for Political and Geographical Studies, Visiting Fellow at the Foundation for Science and Politics in Berlin" "theme" "Putin's Nomenklatura System and its Functioning. War as modus operandi") }}
+
+    </div>
+
+    <div id="Session2" class="py-lg-5 py-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 2 "ssname" "Repression and human rights" "sstime" "12.30-13.30" "ssdesc" "Russia is committing war crimes and crimes against human rights on the territory of Ukraine, in the occupied territories and on the territory of the Russian Federation, where it is taking Ukrainians. And in Russia itself, protests against the war and dictatorship have been criminalized since the war began, and criminal pressure on the opposition has increased dramatically. Is there any prospect of an international investigation into these crimes?" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Oleksandra Romantseva" "image" "romantseva" "affiliation" "Human Rights Activist, Executive Director of the Centre for Civil Liberties, Nobel Peace Prize Laureate (Ukraine)" "theme" "Overview of international crimes committed on the territory of Ukraine as a result of the aggression of the Russian Federation" "badgeparamsp" "d-block") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Sergei Davidis" "image" "davidis" "affiliation" "Head of the independent human rights project ‟Support for Political Prisoners Memorial”" "theme" "Political repression in Russia as an instrument of state control over society") }}
+
+    </div>
+    
+    <div id="Session3" class="py-lg-5 py-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 3 "ssname" "Anti-War Russia in Emigration" "sstime" "14.30-16.00" "ssdesc" "In 2022-2023 about 800 thousand people left Russia. Do people who found themselves in different countries of the world manage to re-socialise? Do they participate in the politics of their countries and of Russia? Can and will emigration have a significant impact on events in Russia?" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Alexander Morozov" "image" "morozov" "affiliation" "Lecturer at the Faculty of Philosophy, Charles University (Prague)" "theme" "The political significance of emigration. Results of the discussion in 2022-2023") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Inna Berezkina" "image" "berezkina" "affiliation" "Programme Coordinator of the School of Civic Education, Guest Editor of Sapere Online" "theme" "By Helping Others We are Helping Ourselves: Reinventing Civics In the Times Of War") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Margarita Zavadskaya" "image" "zavadskaya" "affiliation" "Political scientist, sociologist, researcher at the Finnish Institute of International Relations, participant in the OutRush project" "theme" "Donating to Democracy? Patterns of Supporting Civil Society Initiatives among Russian Exiles" "badgeparamsp" "d-block") }}
+
+    </div>
+    
+    <div id="Session4" class="py-lg-5 py-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 4 "ssname" "The Ideology of Putin's Regime after the Start of the Invasion of Ukraine" "sstime" "16.30-18.00" "ssdesc" "Does ideology play a significant role in Putin's justification of the war with Ukraine, or is its role insignificant and the authorities are only interested in ‟official patriotism”? What is the nature of Putin's ideology: is it imperialism? Is it fascism? Why has historical revanchism gained such power over the Russian elites?" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Ilya Budraitskis" "image" "budraitskis" "affiliation" "Historian, journalist, political philosopher" "theme" "Two levels of Putin's ideology: the road from cynicism to messianism and back again" "badgeparamsp" "d-block") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Arkady Ostrovsky" "image" "ostrovsky" "affiliation" "Columnist for The Economist" "theme" "Imitation as ideology") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Maria Domanska" "image" "domanska" "affiliation" "Senior researcher at the Centre for Eastern Studies (OSW, Warsaw)" "theme" "Putin's neo-totalitarian project: between state ideology and systemic violence" "badgeparamsp" "d-block") }}
+        
+    </div>
+
+    <div id="DayTwo" class="mt-5 mb-3">
+        <h2 class="display-3 ptserif fw-bold">Day 2</h2>
+    </div>
+
+    <div id="Session5" class="py-lg-5 py-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 5 "ssname" "World politics" "sstime" "9.30-11.00" "ssdesc" "A coalition of Western countries has moved quickly and decisively to support Ukraine against Russian aggression. But will the allies have the resolve to sustain Ukraine if this war is protracted? And how will non-aligned or Russia-supporting countries behave in the future?" "badgeparam" "d-none" "dsg" "d-block") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Sabine Fischer" "image" "fischer" "affiliation" "Senior Fellow, Research Group on Eastern Europe and Eurasia, Stiftung Wissenschaft und Politik (SWP)" "theme" "Domestic reasons for Russia's aggression against Ukraine" "badgeparamsp" "d-block") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Ralf Fücks" "image" "fuks" "affiliation" "Director of the Centre for Liberal Modernity" "theme" "Russia's war against Ukraine: A moment of truth for Europe") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Alexander Baunov" "image" "baunov" "affiliation" "Senior Fellow at the Carnegie Centre for Russian and Eurasian Studies in Berlin" "theme" "To be announced") }}
+
+    </div>
+
+    <div id="Session6" class="py-lg-5 py-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 6 "ssname" "World politics" "sstime" "11.30-13.00" "ssdesc" "A coalition of Western countries has moved quickly and decisively to support Ukraine against Russian aggression. But will the allies have the resolve to sustain Ukraine if this war is protracted? And how will non-aligned or Russia-supporting countries behave in the future?" "badgecontent" "Continuation" "dsg" "d-block") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Mikhail Minakov" "image" "minakov" "affiliation" "Philosopher, Head of the Ukrainian Research Programme at the Kennan Institute" "theme" "Militarisation as a Zeitgeist. European societies and states in times of war") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Alexander Gabuev" "image" "gabuev" "affiliation" "Director, Carnegie Berlin Centre for Russian and Eurasian Studies" "theme" "Russia in the context of China's confrontation with the West") }}
+
+    </div>
+    
+    <div id="Session7" class="py-lg-5 py-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 7 "ssname" "What do we know about the mood of the Russians?" "sstime" "14.00-15.30" "ssdesc" "Opinion polls show that Russians support the actions of Putin's regime in Ukraine. At the same time, many would like to see an end to the war, and the dynamics of recruitment of contract workers do not show large numbers of people ready to rise up ‟to fight the West in Ukraine”. What is the real mood of the Russians? What do they think about the war and how do they justify it?" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Lev Gudkov" "image" "gudkov" "affiliation" "Deputy Director, Research Director of the Levada Centre" "theme" "The War and the Collective Identity" "badgeparamsp" "d-block") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Andrei Kolesnikov" "image" "kolesnikov" "affiliation" "Senior Research Fellow, Carnegie Berlin Centre for Russian and Eurasian Studies" "theme" "A semi-mobilised society in a hybrid totalitarian regime" "badgeparamsp" "d-block") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Svetlana Erpyleva" "image" "yerpileva" "affiliation" "Humboldt Fellow at the Research Centre for Eastern European Studies at the University of Bremen, member of the Public Sociology Laboratory and the Centre for Independent Sociological Research" "theme" "Coming to terms with the inevitable: how Russians justify the war in Ukraine") }}
+
+    </div>
+    
+    <div id="Session8" class="py-lg-5 py-4">
+
+        {{partial "lists/session.html" (dict "ssnumber" 8 "ssname" "War economy" "sstime" "15.45-17.45" "ssdesc" "Despite unprecedented sanctions, Russia has avoided a sharp economic downturn. It has also managed to adapt to restrictions on imports of technological products: some technologies are supplied by third countries and some by countries friendly to Russia. But will Russia be able to significantly increase arms production and fight a long war?" "badgeparam" "d-none") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Alexander Libman" "image" "libman" "affiliation" "Professor of Russian and East European Politics at the Free University of Berlin" "theme" "Russia's economic isolation: what's next?") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Heli Simola" "image" "simola" "affiliation" "Senior Economist at the Bank of Finland Institute for Emerging Economies (BOFIT)" "theme" "Effects of the sanctions on the Russian economy") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Pavel Luzin" "image" "luzin" "affiliation" "Military Policy Researcher, Visiting Fellow at the Fletcher School of Law and Diplomacy, Tufts University, Senior Fellow at the Jamestown Foundation" "theme" "The Russian Military Industrial Complex: Production, Costs, Bottlenecks and Prospects" "badgeparamsp" "d-block") }}
+
+        {{partial "lists/speaker.html" (dict "name" "Sergei Guriev" "image" "guriev" "affiliation" "Professor of Economics and Provost, Sciences Po (Paris)" "theme" "Putin's economic policy before and after 2022" "badgeparamsp" "d-block") }}
+
+    </div>
+
+    </div>
+
+    </div>
+
+</div>
+
+<div class="container pb-5">
+    <div class="row py-5 registrationform mx-auto">
+
+        {{ partial "registration.html" (dict "google" "AKfycbyM2lupWIr5naz90jtkBfR9aleOZqDcI2yE5-NsFn2Q_RnJOiGgxJgk0J7sXSK_X4ji" "inplace" "d-none" "success" "Thank you, you have successfully registered! We will send you links to the conference on the day of the event. In case the email does not arrive, please check your spam folder. If you have any additional questions, please email us:") }}
+
+    </div>
+</div>
+
+{{ end }}
