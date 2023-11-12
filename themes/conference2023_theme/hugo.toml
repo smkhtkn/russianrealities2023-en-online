@@ -1,6 +1,14 @@
-baseURL = 'https://stranaimir2023ru.sakharov.world'
+baseURL = 'https://russianrealities2023.sakharov.world/'
 languageCode = 'en'
 title = 'The country and the world: Russian Realities-2023'
+theme = 'conference2023_theme'
+publishDir = 'docs'
+relativeURLS = true
+
+[params]
+  description = 'The international conference The Country and The World is dedicated to the Russian aggression against Ukraine and how this war is changing Russia. We will talk about the transformation of the political regime and its ideology, the state of Russian society, repression and war crimes, the new wave of emigration, international politics and economics.'
+  images = ['opengraph-en.png']
+  title = 'The country and the world: Russian Realities-2023'
 
 [[menus.main]]
 name = 'Home'
